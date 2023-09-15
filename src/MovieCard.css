@@ -1,4 +1,73 @@
+img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 1px;
+}
 .card {
+    z-index: -1;
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+.info{
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    
+    }
+    .release-date{
+        margin-top: 5px;
+        text-align: left;
+        color: gray;
+        font-weight: bold;
+        text-align: left;
+        margin-left: -20px;
+    }
+
+    .linkCard {
+        z-index: -1;
+        text-decoration: none;
+        display: flex;
+    }
+
+
+    
+.title {
+    color: black;
+    font-weight: bold;
+    text-align: left;
+    font-size: 18px;
+}
+
+#like {
+    position: absolute;
+    top: -1%;
+    left: 50%;
+    transform: translate(50%, 50%);
+
+}
+.love {
+    z-index: 3;
+}
+.container{
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+
+@media (max-width:510px) {
+    #like {
+        position: absolute;
+        top: -1%;
+        left: 70%;
+        transform: translate(50%, 50%);
+}
+}
+
+
+/*.card {
     width: 15rem;
     margin-bottom: 50px;
     z-index: -1;
@@ -67,4 +136,4 @@ i {
     
     }
     
-}
+}*/

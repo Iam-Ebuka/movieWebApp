@@ -1,15 +1,23 @@
 *{
   padding: 0;
-  margin: 0
+  margin: 0;
+  box-sizing: border-box;
 }
 .tile {
+  width: 80vw;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  gap: 30px;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: space-around;
+  gap: 10px;
   align-items: center; 
-  margin-left: 20px; 
-  grid-row: auto;  
+  grid-auto-rows: auto;  
+}
+
+.bodySec{
+  width: 100vw;
+  margin-top: 100px;
+  overflow: hidden;
 }
 
 .HeroSec{
@@ -106,13 +114,7 @@ button:hover {
   margin-bottom: -50px;
 
 }
-.bodySec{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
+
 .errorAndLoading {
   color: #be123c;
   text-align: center;
@@ -122,20 +124,17 @@ button:hover {
 }
 
 @media (max-width: 1400px) {
-  .tile {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
   .search{
     width: 350px
   }
   input{
     height: 30px;
   }
+ 
 }
+
 @media (max-width: 800px) {
-  .tile{
-    grid-template-columns: 1fr 1fr;
-  }
+
   .page-title {
     color: whitesmoke;
     font-weight: bold;
@@ -164,13 +163,11 @@ button:hover {
   
 @media (max-width:600px) {
   .search {
-      width: 50px;
+      width: 100px;
   }
   input {
       height: 20px;
       font-size: 10px;
   }
-  .tile {
-    grid-template-columns: 1fr;
-  }
+
 }
