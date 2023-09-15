@@ -6,8 +6,7 @@ import Footer from "../Footer";
 
 
 
-
-function Movie() {
+const Movie =() => {
  const {id} = useParams()
 
  const [movieData, setMovieData] = useState('');
